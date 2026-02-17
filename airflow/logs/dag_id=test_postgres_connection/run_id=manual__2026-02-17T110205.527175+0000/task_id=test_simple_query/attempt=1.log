@@ -1,0 +1,18 @@
+[2026-02-17T11:02:06.122+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_postgres_connection.test_simple_query manual__2026-02-17T11:02:05.527175+00:00 [queued]>
+[2026-02-17T11:02:06.129+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_postgres_connection.test_simple_query manual__2026-02-17T11:02:05.527175+00:00 [queued]>
+[2026-02-17T11:02:06.130+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-02-17T11:02:06.139+0000] {taskinstance.py:2191} INFO - Executing <Task(PostgresOperator): test_simple_query> on 2026-02-17 11:02:05.527175+00:00
+[2026-02-17T11:02:06.142+0000] {standard_task_runner.py:60} INFO - Started process 1312 to run task
+[2026-02-17T11:02:06.145+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'test_postgres_connection', 'test_simple_query', 'manual__2026-02-17T11:02:05.527175+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmp1pxg25i1']
+[2026-02-17T11:02:06.147+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask test_simple_query
+[2026-02-17T11:02:06.164+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2026-02-17T11:02:06.204+0000] {task_command.py:423} INFO - Running <TaskInstance: test_postgres_connection.test_simple_query manual__2026-02-17T11:02:05.527175+00:00 [running]> on host e99f2a475ca3
+[2026-02-17T11:02:06.273+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test_postgres_connection' AIRFLOW_CTX_TASK_ID='test_simple_query' AIRFLOW_CTX_EXECUTION_DATE='2026-02-17T11:02:05.527175+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-17T11:02:05.527175+00:00'
+[2026-02-17T11:02:06.274+0000] {sql.py:276} INFO - Executing: SELECT 'Hello from Airflow!' as message, NOW() as current_time;
+[2026-02-17T11:02:06.281+0000] {base.py:83} INFO - Using connection ID 'postgres_data_conn' for task execution.
+[2026-02-17T11:02:06.290+0000] {base.py:83} INFO - Using connection ID 'postgres_data_conn' for task execution.
+[2026-02-17T11:02:06.295+0000] {sql.py:450} INFO - Running statement: SELECT 'Hello from Airflow!' as message, NOW() as current_time;, parameters: None
+[2026-02-17T11:02:06.296+0000] {sql.py:459} INFO - Rows affected: 1
+[2026-02-17T11:02:06.314+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=test_postgres_connection, task_id=test_simple_query, execution_date=20260217T110205, start_date=20260217T110206, end_date=20260217T110206
+[2026-02-17T11:02:06.358+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-02-17T11:02:06.373+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
