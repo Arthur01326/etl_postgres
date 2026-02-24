@@ -1,0 +1,216 @@
+[2026-02-24T12:19:57.590+0000] {processor.py:161} INFO - Started process (PID=171) to work on /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:19:57.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag_load.py for tasks to queue
+[2026-02-24T12:19:57.592+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:19:57.592+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:19:58.041+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:19:58.039+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test_dag_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag_load.py", line 60, in <module>
+    with DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 601, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 230, in create_timetable
+    raise ValueError(f"{interval!r} is not a valid interval.")
+ValueError: False is not a valid interval.
+[2026-02-24T12:19:58.042+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:19:58.056+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag_load.py took 0.469 seconds
+[2026-02-24T12:20:28.861+0000] {processor.py:161} INFO - Started process (PID=211) to work on /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:20:28.861+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag_load.py for tasks to queue
+[2026-02-24T12:20:28.862+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:20:28.862+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:20:29.035+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:20:29.032+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test_dag_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag_load.py", line 60, in <module>
+    with DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 601, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 230, in create_timetable
+    raise ValueError(f"{interval!r} is not a valid interval.")
+ValueError: False is not a valid interval.
+[2026-02-24T12:20:29.035+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:20:29.050+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag_load.py took 0.192 seconds
+[2026-02-24T12:20:59.281+0000] {processor.py:161} INFO - Started process (PID=238) to work on /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:20:59.282+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag_load.py for tasks to queue
+[2026-02-24T12:20:59.283+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:20:59.283+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:20:59.468+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:20:59.465+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test_dag_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag_load.py", line 60, in <module>
+    with DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 601, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 230, in create_timetable
+    raise ValueError(f"{interval!r} is not a valid interval.")
+ValueError: False is not a valid interval.
+[2026-02-24T12:20:59.468+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:20:59.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag_load.py took 0.207 seconds
+[2026-02-24T12:21:29.596+0000] {processor.py:161} INFO - Started process (PID=273) to work on /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:21:29.597+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag_load.py for tasks to queue
+[2026-02-24T12:21:29.598+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:21:29.598+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:21:29.775+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:21:29.772+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test_dag_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag_load.py", line 60, in <module>
+    with DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 601, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 230, in create_timetable
+    raise ValueError(f"{interval!r} is not a valid interval.")
+ValueError: False is not a valid interval.
+[2026-02-24T12:21:29.775+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:21:29.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag_load.py took 0.197 seconds
+[2026-02-24T12:21:59.861+0000] {processor.py:161} INFO - Started process (PID=308) to work on /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:21:59.862+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag_load.py for tasks to queue
+[2026-02-24T12:21:59.862+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:21:59.862+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:22:00.065+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:22:00.062+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test_dag_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag_load.py", line 60, in <module>
+    with DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 601, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 230, in create_timetable
+    raise ValueError(f"{interval!r} is not a valid interval.")
+ValueError: False is not a valid interval.
+[2026-02-24T12:22:00.065+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:22:00.083+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag_load.py took 0.224 seconds
+[2026-02-24T12:22:30.186+0000] {processor.py:161} INFO - Started process (PID=335) to work on /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:22:30.187+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag_load.py for tasks to queue
+[2026-02-24T12:22:30.188+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:22:30.188+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:22:30.396+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:22:30.392+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test_dag_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag_load.py", line 60, in <module>
+    with DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 601, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 230, in create_timetable
+    raise ValueError(f"{interval!r} is not a valid interval.")
+ValueError: False is not a valid interval.
+[2026-02-24T12:22:30.396+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:22:30.417+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag_load.py took 0.233 seconds
+[2026-02-24T12:23:00.471+0000] {processor.py:161} INFO - Started process (PID=370) to work on /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:23:00.471+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag_load.py for tasks to queue
+[2026-02-24T12:23:00.472+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:23:00.472+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:23:00.652+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:23:00.649+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test_dag_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag_load.py", line 60, in <module>
+    with DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 601, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 230, in create_timetable
+    raise ValueError(f"{interval!r} is not a valid interval.")
+ValueError: False is not a valid interval.
+[2026-02-24T12:23:00.653+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:23:00.671+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag_load.py took 0.204 seconds
+[2026-02-24T12:23:30.739+0000] {processor.py:161} INFO - Started process (PID=397) to work on /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:23:30.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag_load.py for tasks to queue
+[2026-02-24T12:23:30.743+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:23:30.742+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:23:30.954+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:23:30.951+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test_dag_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag_load.py", line 60, in <module>
+    with DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 601, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 230, in create_timetable
+    raise ValueError(f"{interval!r} is not a valid interval.")
+ValueError: False is not a valid interval.
+[2026-02-24T12:23:30.954+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:23:30.978+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag_load.py took 0.241 seconds
+[2026-02-24T12:24:01.059+0000] {processor.py:161} INFO - Started process (PID=432) to work on /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:24:01.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag_load.py for tasks to queue
+[2026-02-24T12:24:01.061+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:24:01.061+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:24:01.252+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:24:01.249+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test_dag_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag_load.py", line 60, in <module>
+    with DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 601, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 230, in create_timetable
+    raise ValueError(f"{interval!r} is not a valid interval.")
+ValueError: False is not a valid interval.
+[2026-02-24T12:24:01.253+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:24:01.271+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag_load.py took 0.214 seconds
+[2026-02-24T12:24:31.324+0000] {processor.py:161} INFO - Started process (PID=467) to work on /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:24:31.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag_load.py for tasks to queue
+[2026-02-24T12:24:31.326+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:24:31.326+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:24:31.508+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:24:31.505+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test_dag_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag_load.py", line 60, in <module>
+    with DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 601, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 230, in create_timetable
+    raise ValueError(f"{interval!r} is not a valid interval.")
+ValueError: False is not a valid interval.
+[2026-02-24T12:24:31.508+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:24:31.523+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag_load.py took 0.201 seconds
+[2026-02-24T12:25:01.605+0000] {processor.py:161} INFO - Started process (PID=489) to work on /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:25:01.606+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag_load.py for tasks to queue
+[2026-02-24T12:25:01.607+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:25:01.606+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:25:01.804+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:25:01.800+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test_dag_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag_load.py", line 60, in <module>
+    with DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 601, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 230, in create_timetable
+    raise ValueError(f"{interval!r} is not a valid interval.")
+ValueError: False is not a valid interval.
+[2026-02-24T12:25:01.804+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:25:01.824+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag_load.py took 0.221 seconds
+[2026-02-24T12:25:31.908+0000] {processor.py:161} INFO - Started process (PID=519) to work on /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:25:31.909+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag_load.py for tasks to queue
+[2026-02-24T12:25:31.910+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:25:31.909+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:25:32.090+0000] {logging_mixin.py:188} INFO - [2026-02-24T12:25:32.087+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/test_dag_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag_load.py", line 60, in <module>
+    with DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 601, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 230, in create_timetable
+    raise ValueError(f"{interval!r} is not a valid interval.")
+ValueError: False is not a valid interval.
+[2026-02-24T12:25:32.091+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag_load.py
+[2026-02-24T12:25:32.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag_load.py took 0.202 seconds
